@@ -165,3 +165,5 @@ C:\Users\renau\Documents\WebApp Projects\Cerebro\obj\Debug\net5.0\Cerebro.dll
 C:\Users\renau\Documents\WebApp Projects\Cerebro\obj\Debug\net5.0\ref\Cerebro.dll
 C:\Users\renau\Documents\WebApp Projects\Cerebro\obj\Debug\net5.0\Cerebro.pdb
 C:\Users\renau\Documents\WebApp Projects\Cerebro\obj\Debug\net5.0\Cerebro.genruntimeconfig.cache
+C:\Users\renau\Documents\WebApp Projects\Cerebro\obj\Debug\net5.0\Razor\Views\NoteBinder\CreateCategory.cshtml.g.cs
+C:\Users\renau\Documents\WebApp Projects\Cerebro\obj\Debug\net5.0\Razor\Views\NoteBinder\Index.cshtml.g.cs

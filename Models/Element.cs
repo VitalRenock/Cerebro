@@ -8,10 +8,10 @@ namespace Cerebro.Models
 {
     public abstract class Element
     {
-        protected Element(string title)
-        {
-            Title = title;
-        }
+        //protected Element(string title)
+        //{
+        //    Title = title;
+        //}
 
         public int Id { get; set; }
         public int ParentId { get; set; }

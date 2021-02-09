@@ -11,9 +11,9 @@ namespace Cerebro.Models
         public List<Element> Elements = new List<Element>();
 
 
-        public Category(string name) : base(name)
-        {
-        }
+        //public Category(string name) : base(name)
+        //{
+        //}
 
         public override void Display()
         {

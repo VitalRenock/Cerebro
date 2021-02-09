@@ -8,9 +8,9 @@ namespace Cerebro.Models
 {
     public class Note : Element
     {
-        public Note(string name) : base(name)
-        {
-        }
+        //public Note(string name) : base(name)
+        //{
+        //}
 
         public override void Display()
         {
