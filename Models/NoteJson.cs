@@ -6,13 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Cerebro.Models
 {
-    public class NoteJson
+    public class NoteJson : NoteModel
     {
-        public int Id { get; set; }
-        public int ParentId { get; set; }
-        public string Title { get; set; }
-        public int HierarchicalLevel { get; set; }
-        public string Description { get; set; }
         public string ChildsId { get; set; }
     }
 }

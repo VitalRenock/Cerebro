@@ -1,7 +1,69 @@
-﻿@{
-    ViewData["Title"] = "Note Binder Page";
+﻿@model IEnumerable<Cerebro.Models.NoteJson>;
+
+@{
+    ViewData["Title"] = "Note Binder - Index";
 }
 
 <div>
-    <a asp-action="CreateCategory">Create category</a>
+    <a asp-action="Create">Create note</a>
+</div>
+
+<div>
+    <h3>Are you sure you want to delete this?</h3>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParentId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HierarchicalLevel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ChildsId)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ParentId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.HierarchicalLevel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChildsId)
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

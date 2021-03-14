@@ -6,15 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Cerebro.Models
 {
-    public class Note : Element
+    public class Note : NoteModel
     {
-        //public Note(string name) : base(name)
-        //{
-        //}
-
-        public override void Display()
-        {
-            Console.WriteLine(this.HierarchicalString + this.Title);
-        }
-    }
+		public List<int> ChildsId { get; set; }
+	}
 }
